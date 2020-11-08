@@ -1,0 +1,191 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color:rgb(34, 35, 37);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 0;
+}
+
+img {
+  max-width: 100%
+}
+.image {
+  flex-basis: 10%;
+  margin: 0;
+}
+h2#selection{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-left:20px;
+  margin: 0;
+}
+
+.padding{
+  padding-right:500px;
+}
+
+.header {
+  padding:none;
+  background:gold;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+  display:table;
+  width:100%;
+}
+nav{
+  padding:none;
+  background:white;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+  display:table;
+  width:100%;
+  position: fixed;
+  margin: 0;
+}
+
+nav div{
+  display: table-cell;
+}
+
+#no_underlined{
+  text-decoration: none;
+}
+
+
+.round {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px #000 solid;
+  padding: 10px 10px 10px 25px;
+  position: absolute;
+  bottom:0;
+  right: 50px;
+}
+
+.corner {
+  position: absolute;
+  bottom: 20;
+  right: 55px;
+  height: 20px;
+  width: 20px;
+  z-index: 10;
+  border-radius: 10px;
+  border: none;
+  background-image: url("");
+}
+
+.search {
+  position: relative; 
+  width: 190px;
+  height: 30px;
+}
+
+#dot_indent {
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+a:hover {
+  color: darkorange;
+  text-transform: uppercase;
+  
+}
+a:active {
+  color: black;
+}
+
+.setSlides{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+#bg_01 {
+  background-image: url(https://ak.picdn.net/shutterstock/videos/1033300118/thumb/1.jpg);
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+.taco_types{
+  border: black 6px solid;
+}
+
+.taco_subheading{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#head_1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  color: white;
+  background-color: rgba(0,0,0, 0.7);
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+}
+
+#step1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: white 5px solid;
+  border-radius: 10px;
+  margin: 10px;
+}  
+
+#step2 {
+  border: white 5px solid;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: 30px;
+}  
+
+#step3 {
+  border: white 5px solid;
+  border-radius: 10px;
+  margin: 10px;
+}  
+
+#bg_02 {
+  background-image: url(https://ocs879.github.io/bg_02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p.footer{
+  font-size:15px;
+  font-family:'Times New Roman'
+}
+
+#footer {
+  border: 5px solid black;
+  margin: 0;
+  font-size: 15px;
+  color: white;
+  background-color: #000;
+  height: 150px;
+}
+#go_top{
+  margin-right: 20px;
+}

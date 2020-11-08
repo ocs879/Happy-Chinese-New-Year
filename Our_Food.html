@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <title>TakoDonald®: Our Food</title>
+    <head>
+        <meta name="viewport" content="width=device-width/2, initial-scale=0.5">
+        <link rel='stylesheet' type='text/css' href='Our_Food.css'>
+    </head>
+    <body background-image="https://ak.picdn.net/shutterstock/videos/1033300118/thumb/1.jpg">      
+        <header>
+            <nav id="selectionborder">
+                <h2 id="selection">
+                    <div class="container">
+                        <div class="image">
+                            <a href="Home.html">
+                                <img border="0" alt="Home" src="https://ocs879.github.io/MainLogo.png" width=100px>
+                            </a>
+                        </div>
+                        <div>                    
+                            <a href="Our_Food.html" id="no_underlined">Our foods</a>
+                            &nbsp; <text id="dot_indent">・</text> &nbsp;
+                        </div>
+                        <div>
+                            <a href="About_us.html" id="no_underlined">About us</a>
+                            &nbsp; <text id="dot_indent">・</text> &nbsp;                        
+                        </div>
+                        <div class="padding">
+                            <a href="Register.html" id="no_underlined">Sign Up/Register</a>                        
+                        </div>
+                        <form id="search-form" class="search">
+                            <input type="text" name="search" class="round" placeholder="search" />
+                            <input type="submit" class="corner" value="">
+                        </form>
+                    </div>                      
+                </h2>
+            </nav>
+        </header>
+        <br><br><br><br><br><br>
+        <div id="bg_01">
+            <img class="setSlides" src="https://ocs879.github.io/set_01.png">
+            <img class="setSlides" src="https://ocs879.github.io/set_02.png">
+            <img class="setSlides" src="https://ocs879.github.io/set_03.png">
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <br><br>
+        <div id="bg_02" align="center">
+            <i><h1 id="head_1" align="center" style="font-size:3.9vw;">Let's customize your own Taco!</h1></i>
+            <img src="https://ocs879.github.io/step1_bg.png" id="step1" align="center" width="750px">
+            <br>
+            <img src="https://ocs879.github.io/steps2_background.png" align="center" id="step2" width="350px">
+            <img src="https://ocs879.github.io/steps3_bg.png" align="center" id="step3" width="350px">
+            <br>
+            <img src="https://ocs879.github.io/steps4_bg.png" align="center" id="step1" width="750px">
+            <br>
+            <img src="https://ocs879.github.io/steps5_bg.png" align="center" id="step1" width="750px">
+            <br>
+        </div>
+        <div>
+            <footer id="footer" align="center">
+                <br><img id="go_top" onclick="go_to_top();" src="https://ocs879.github.io/Top_arrow_logo.png" align="right" width="100px"><br>
+                <p class="footer">Copyright © 1996-2020. All Rights Reserved by TakoDonald Restaurants Sdn Bhd (69696-M). Licensee of TakoDonald®</p>
+                <p class="footer">The Taco Logo and “TakoDonald®” are trademarks of TakoDonald® Corporation and its affiliates.</p>
+            </footer>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var nav = document.getElementById("selectionborder");
+            var sticky = nav.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    nav.classList.add("header");
+                } 
+                else {
+                    nav.classList.remove("header");
+                }
+            }
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("setSlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000);
+            }
+            
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("setSlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+
+            function go_to_top() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <title>TakoDonald®: Home</title>
+    <head>
+        <meta name="viewport" content="width=device-width/2, initial-scale=0.5">
+        <link rel='stylesheet' type='text/css' href='Home.css'>
+    </head>
+    <body>      
+        <header>
+            <nav id="selectionborder">
+                <h2 id="selection">
+                    <div class="container">
+                        <div class="image">
+                            <a href="Home.html">
+                                <img border="0" alt="Home" src="https://ocs879.github.io/MainLogo.png" width=100px>
+                            </a>
+                        </div>
+                        <div>                    
+                            <a href="Our_Food.html" id="no_underlined">Our foods</a>
+                            &nbsp; <text id="dot_indent">・</text> &nbsp;
+                        </div>
+                        <div>
+                            <a href="About_us.html" id="no_underlined">About us</a>
+                            &nbsp; <text id="dot_indent">・</text> &nbsp;                        
+                        </div>
+                        <div class="padding">
+                            <a href="Register.html" id="no_underlined">Sign Up/Register</a>                        
+                        </div>
+                        <form id="search-form" class="search">
+                            <input type="text" name="search" class="round" placeholder="search" />
+                            <input type="submit" class="corner" value="" />
+                        </form>
+                    </div>                      
+                </h2>
+            </nav>
+        </header>
+        <a href="Our_Food.html">
+            <div class="bg"></div>
+        </a>
+        <div class="content_bg"><br><br>
+            <h1 style="font-size:2.9vw;"><span> Promotions </span></h1>
+            <div class="row">
+                    <div class="column">
+                        <img id="promotions1" alt="Tac' Morning : Hot Cup (any options of hot beverage) + Sunshine Egg and Ham Burrito." src="https://ocs879.github.io/TacMorning.jpg" style="width:100%">
+                    </div>
+                    <div id="promotions1_modal" class="modal">
+                        <span class="close1">&times;</span>
+                        <img class="modal-content" id="prom1">
+                        <div id="caption1"></div>
+                    </div>
+                    <div class="column">
+                        <img id="promotions2" alt="Daily Routine : Coke (330ml) + French Fries (M) + Tac'Signature (Mixed Veges & Minced Pork with BBQ sauce)." src="https://ocs879.github.io/DailyRoutine.jpg" style="width:100%">
+                    </div>
+                    <div id="promotions2_modal" class="modal">
+                        <span class="close2">&times;</span>
+                        <img class="modal-content" id="prom2">
+                        <div id="caption2"></div>
+                    </div> 
+                    <div class="column">
+                        <img id="promotions3" alt="Triple Bliss : Coke(1000ml) + French Fries (L) + Salad Bowl (L) + Tac'Mexicano (Mixed Veges & Beef Bites with Black Pepper sauce)." src="https://ocs879.github.io/TripleBliss.jpg" style="width:100%">
+                    </div>
+                    <div id="promotions3_modal" class="modal">
+                        <span class="close3">&times;</span>
+                        <img class="modal-content" id="prom3">
+                        <div id="caption3"></div>
+                    </div>
+            </div><br><br><br>
+            <div>
+                <footer id="footer" align="center">
+                    <br><img id="go_top" onclick="go_to_top();" src="https://ocs879.github.io/Top_arrow_logo.png" align="right" width="100px"><br>
+                    <p>Copyright © 1996-2020. All Rights Reserved by TakoDonald Restaurants Sdn Bhd (69696-M). Licensee of TakoDonald®</p>
+                    <p>The Taco Logo and “TakoDonald®” are trademarks of TakoDonald® Corporation and its affiliates.</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var nav = document.getElementById("selectionborder");
+            var sticky = nav.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    nav.classList.add("header");
+                } 
+                else {
+                    nav.classList.remove("header");
+                }
+            }
+
+            var modal = document.getElementById("promotions1_modal");
+            var img = document.getElementById("promotions1");
+            var modalImg = document.getElementById("prom1");
+            var captionText = document.getElementById("caption1");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close1")[0];
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+
+            var modal = document.getElementById("promotions2_modal");
+            var img = document.getElementById("promotions2");
+            var modalImg = document.getElementById("prom2");
+            var captionText = document.getElementById("caption2");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close2")[0];
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+
+            var modal = document.getElementById("promotions3_modal");
+            var img = document.getElementById("promotions3");
+            var modalImg = document.getElementById("prom3");
+            var captionText = document.getElementById("caption3");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close3")[0];
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+
+            function go_to_top() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <title>TakoDonald®: Register/Sign up</title>
+    <head>
+        <meta name="viewport" content="width=device-width/2, initial-scale=0.5">
+        <link rel='stylesheet' type='text/css' href='Register.css'>
+    </head>
+    <body> 
+        <form action="/action_page.php">
+            <div class="container">
+                <div class="header">
+                    <a href="Home.html">
+                        <img border="0" alt="Home" src="https://ocs879.github.io/MainLogo.png" width=100px class="image">                
+                    </a>
+                    <i><h1>・Register / Sign up</h1></i>
+                </div>
+                <p>Please fill in this form to create an account.</p><hr>
+                <label for="email"><b>Email:</b></label>
+                <p><input type="text" placeholder="Enter Email" name="email" id="email" required></p>      
+                <p><label for="psw"><b>Password:</b></label></p>
+                <p><input type="password" placeholder="Enter Password" name="psw" id="psw" required></p>
+                <p><label for="psw-repeat"><b>Confirm Password:</b></label></p>
+                <p><input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required></p> 
+                <p>
+                    <p><b>Date of Birth:</b></p>
+                    <label for="date">Date:</label>
+                    <select name="date" id="date">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <label for="month">month:</label>
+                    <select name="month" id="month">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <label for="year">Year:</label>
+                    <select name="date" id="date">
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                    </select>
+                </p>
+                <br>
+                <p>
+                    <p><b>Gender:</b></p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </p>              
+                <hr><p>By creating an account you agree to our <a onclick="document.getElementById('id02').style.display='block'">Terms & Privacy</a>.</p>
+                <div id="id02" class="modal">
+                    <div class="modal-content animate">
+                        <div class="termscontainer">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+                            <u><h1 align="center">Terms & privacy</h1></u>
+                            <ol>
+                                <li> Prices for all products and delivery services are inclusive of 6% Service Tax.</li><br>
+                                <li> A minimum order of RM 15 and RM 4 delivery fee apply for all orders.</li><br>
+                                <li> Limited delivery area only.</li><br>  
+                                <li> Operation hours: 10.00am to 10.30pm (May vary depending on location).</li><br>    
+                                <li> Prices of this menu are applicable for TakoDonald Delivery only and subject to change without prior notice.</li><br>    
+                                <li> For large orders exceeding RM200, the estimated delivery time is within 2 hours.</li><br>    
+                                <li> All products in the promotional bundles and sets are fixed.</li><br>    
+                                <li> Meal deal for TakoDonald Delivery and Dine In or Take Away may differ.</li><br>    
+                                <li> To ensure rider safety, TakoDonald Delivery may be temporarily unavailable at selected areas due to weather conditions or unforeseen circumstances.</li><br>    
+                                <li> Visuals shown are for illustration purposes only.</li><br>    
+                                <li> Payment can be made by cash. Alternatively we accept payment made with credit card or debit card (Visa, MasterCard) issued by banks in Malaysia.</li><br>    
+                                <li> Payment by credit card or debit card shall be made at the point of order. Cash payment shall be made at the point of arrival of food.</li><br>   
+                                <li> There is strictly no refund, change or cancellation once the order has been confirmed or payment has been made.</li><br>    
+                                <li>s In the event of any inconsistency between the English and Malay language version of the terms and conditions, the English language version shall prevail.</li><br>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="registerbtn">Register</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="container signin">
+            <p>Already have an account? <a onclick="document.getElementById('id01').style.display='block'">Sign in</a>.</p>
+            <div id="id01" class="modal">
+
+                <form class="modal-content animate">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="https://ocs879.github.io/logo_orgbg.png" alt="logo" class="circle">
+                    </div>
+
+                    <div class="logincontainer">
+                        <p>
+                            <label for="email"><b>Email:</b></label>
+                            <input type="text" placeholder="Enter Email" name="Email" required>                        
+                        </p>
+                        <p>
+                        <label for="psw"><b>Password:</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>                        
+                        </p>      
+                    </div>
+
+                    <div class="logincontainer" style="background-color:#e0e0e0">
+                        <button type="submit" class="loginbtn">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>   
+        <div>
+            <footer id="footer" align="center">
+                <br><img id="go_top" onclick="go_to_top();" src="https://ocs879.github.io/Top_arrow_logo.png" align="right" width="100px"><br>
+                <p class="footer">Copyright © 1996-2020. All Rights Reserved by TakoDonald Restaurants Sdn Bhd (69696-M). Licensee of TakoDonald®</p>
+                <p class="footer">The Taco Logo and “TakoDonald®” are trademarks of TakoDonald® Corporation and its affiliates.</p>
+            </footer>
+        </div>   
+    </body>
+    <script>
+        function go_to_top() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</html>
+
+  
